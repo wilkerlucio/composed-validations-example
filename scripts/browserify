@@ -1,0 +1,3 @@
+#!/bin/bash
+
+browserify public/javascripts/main.js > public/javascripts/application.js

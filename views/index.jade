@@ -1,0 +1,36 @@
+extends layout
+
+mixin form-input
+  .form-group
+    block
+
+block content
+  .site-wrapper
+    .site-wrapper-inner
+      .cover-container
+        .inner.cover
+          h1.cover-heading Sign up
+
+          form#signup-form(action="/users", novalidate)
+            +form-input
+              label Name
+              span.help-block
+              input.form-control(type="text", name="name")
+
+            +form-input
+              label Email
+              span.help-block
+              input.form-control(type="email", name="email")
+
+            +form-input
+              label Password
+              span.help-block
+              input.form-control(type="password", name="password")
+
+            +form-input
+              label Password Confirmation
+              span.help-block
+              input.form-control(type="password", name="password_confirmation")
+
+            .text-right
+              button.btn.btn-primary(type="submit") Sign up

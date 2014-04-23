@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/vendor/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/vendor/bower_components/bootstrap/dist/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    block content
+
+    script(src="/vendor/bower_components/jquery/dist/jquery.js")
+    script(src="/javascripts/application.js")
